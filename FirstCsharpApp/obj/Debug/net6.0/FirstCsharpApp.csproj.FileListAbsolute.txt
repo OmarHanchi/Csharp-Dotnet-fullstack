@@ -1,0 +1,15 @@
+C:\Users\Omar\Desktop\c_sharp_stack\FirstCsharpApp\bin\Debug\net6.0\FirstCsharpApp.exe
+C:\Users\Omar\Desktop\c_sharp_stack\FirstCsharpApp\bin\Debug\net6.0\FirstCsharpApp.deps.json
+C:\Users\Omar\Desktop\c_sharp_stack\FirstCsharpApp\bin\Debug\net6.0\FirstCsharpApp.runtimeconfig.json
+C:\Users\Omar\Desktop\c_sharp_stack\FirstCsharpApp\bin\Debug\net6.0\FirstCsharpApp.dll
+C:\Users\Omar\Desktop\c_sharp_stack\FirstCsharpApp\bin\Debug\net6.0\FirstCsharpApp.pdb
+C:\Users\Omar\Desktop\c_sharp_stack\FirstCsharpApp\obj\Debug\net6.0\FirstCsharpApp.csproj.AssemblyReference.cache
+C:\Users\Omar\Desktop\c_sharp_stack\FirstCsharpApp\obj\Debug\net6.0\FirstCsharpApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Omar\Desktop\c_sharp_stack\FirstCsharpApp\obj\Debug\net6.0\FirstCsharpApp.AssemblyInfoInputs.cache
+C:\Users\Omar\Desktop\c_sharp_stack\FirstCsharpApp\obj\Debug\net6.0\FirstCsharpApp.AssemblyInfo.cs
+C:\Users\Omar\Desktop\c_sharp_stack\FirstCsharpApp\obj\Debug\net6.0\FirstCsharpApp.csproj.CoreCompileInputs.cache
+C:\Users\Omar\Desktop\c_sharp_stack\FirstCsharpApp\obj\Debug\net6.0\FirstCsharpApp.dll
+C:\Users\Omar\Desktop\c_sharp_stack\FirstCsharpApp\obj\Debug\net6.0\refint\FirstCsharpApp.dll
+C:\Users\Omar\Desktop\c_sharp_stack\FirstCsharpApp\obj\Debug\net6.0\FirstCsharpApp.pdb
+C:\Users\Omar\Desktop\c_sharp_stack\FirstCsharpApp\obj\Debug\net6.0\FirstCsharpApp.genruntimeconfig.cache
+C:\Users\Omar\Desktop\c_sharp_stack\FirstCsharpApp\obj\Debug\net6.0\ref\FirstCsharpApp.dll
