@@ -1,0 +1,15 @@
+E:\Dojo\CCC\practice\Fundamentals_1\obj\Debug\net6.0\Fundamentals_1.csproj.AssemblyReference.cache
+E:\Dojo\CCC\practice\Fundamentals_1\obj\Debug\net6.0\Fundamentals_1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dojo\CCC\practice\Fundamentals_1\obj\Debug\net6.0\Fundamentals_1.AssemblyInfoInputs.cache
+E:\Dojo\CCC\practice\Fundamentals_1\obj\Debug\net6.0\Fundamentals_1.AssemblyInfo.cs
+E:\Dojo\CCC\practice\Fundamentals_1\obj\Debug\net6.0\Fundamentals_1.csproj.CoreCompileInputs.cache
+E:\Dojo\CCC\practice\Fundamentals_1\bin\Debug\net6.0\Fundamentals_1.exe
+E:\Dojo\CCC\practice\Fundamentals_1\bin\Debug\net6.0\Fundamentals_1.deps.json
+E:\Dojo\CCC\practice\Fundamentals_1\bin\Debug\net6.0\Fundamentals_1.runtimeconfig.json
+E:\Dojo\CCC\practice\Fundamentals_1\bin\Debug\net6.0\Fundamentals_1.dll
+E:\Dojo\CCC\practice\Fundamentals_1\bin\Debug\net6.0\Fundamentals_1.pdb
+E:\Dojo\CCC\practice\Fundamentals_1\obj\Debug\net6.0\Fundamentals_1.dll
+E:\Dojo\CCC\practice\Fundamentals_1\obj\Debug\net6.0\refint\Fundamentals_1.dll
+E:\Dojo\CCC\practice\Fundamentals_1\obj\Debug\net6.0\Fundamentals_1.pdb
+E:\Dojo\CCC\practice\Fundamentals_1\obj\Debug\net6.0\Fundamentals_1.genruntimeconfig.cache
+E:\Dojo\CCC\practice\Fundamentals_1\obj\Debug\net6.0\ref\Fundamentals_1.dll

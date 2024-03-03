@@ -1,0 +1,15 @@
+E:\Dojo\CCC\practice\Fundamentals2\bin\Debug\net8.0\Fundamentals2.exe
+E:\Dojo\CCC\practice\Fundamentals2\bin\Debug\net8.0\Fundamentals2.deps.json
+E:\Dojo\CCC\practice\Fundamentals2\bin\Debug\net8.0\Fundamentals2.runtimeconfig.json
+E:\Dojo\CCC\practice\Fundamentals2\bin\Debug\net8.0\Fundamentals2.dll
+E:\Dojo\CCC\practice\Fundamentals2\bin\Debug\net8.0\Fundamentals2.pdb
+E:\Dojo\CCC\practice\Fundamentals2\obj\Debug\net8.0\Fundamentals2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dojo\CCC\practice\Fundamentals2\obj\Debug\net8.0\Fundamentals2.AssemblyInfoInputs.cache
+E:\Dojo\CCC\practice\Fundamentals2\obj\Debug\net8.0\Fundamentals2.AssemblyInfo.cs
+E:\Dojo\CCC\practice\Fundamentals2\obj\Debug\net8.0\Fundamentals2.csproj.CoreCompileInputs.cache
+E:\Dojo\CCC\practice\Fundamentals2\obj\Debug\net8.0\Fundamentals2.sourcelink.json
+E:\Dojo\CCC\practice\Fundamentals2\obj\Debug\net8.0\Fundamentals2.dll
+E:\Dojo\CCC\practice\Fundamentals2\obj\Debug\net8.0\refint\Fundamentals2.dll
+E:\Dojo\CCC\practice\Fundamentals2\obj\Debug\net8.0\Fundamentals2.pdb
+E:\Dojo\CCC\practice\Fundamentals2\obj\Debug\net8.0\Fundamentals2.genruntimeconfig.cache
+E:\Dojo\CCC\practice\Fundamentals2\obj\Debug\net8.0\ref\Fundamentals2.dll
