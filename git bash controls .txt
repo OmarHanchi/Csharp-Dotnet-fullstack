@@ -1,0 +1,12 @@
+git bash controls :
+ 
+**git init 
+git add .
+git commit -m"message"
+**git remote add origin https...
+git push origin master
+
+** : only at first time
+
+.........................
+git status (see all history)

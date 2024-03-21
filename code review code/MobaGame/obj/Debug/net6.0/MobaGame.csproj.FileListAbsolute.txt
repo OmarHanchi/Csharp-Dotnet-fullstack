@@ -1,0 +1,15 @@
+C:\Users\Omar\Desktop\c_sharp_stack\code review code\MobaGame\obj\Debug\net6.0\MobaGame.csproj.AssemblyReference.cache
+C:\Users\Omar\Desktop\c_sharp_stack\code review code\MobaGame\obj\Debug\net6.0\MobaGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Omar\Desktop\c_sharp_stack\code review code\MobaGame\obj\Debug\net6.0\MobaGame.AssemblyInfoInputs.cache
+C:\Users\Omar\Desktop\c_sharp_stack\code review code\MobaGame\obj\Debug\net6.0\MobaGame.AssemblyInfo.cs
+C:\Users\Omar\Desktop\c_sharp_stack\code review code\MobaGame\obj\Debug\net6.0\MobaGame.csproj.CoreCompileInputs.cache
+C:\Users\Omar\Desktop\c_sharp_stack\code review code\MobaGame\bin\Debug\net6.0\MobaGame.exe
+C:\Users\Omar\Desktop\c_sharp_stack\code review code\MobaGame\bin\Debug\net6.0\MobaGame.deps.json
+C:\Users\Omar\Desktop\c_sharp_stack\code review code\MobaGame\bin\Debug\net6.0\MobaGame.runtimeconfig.json
+C:\Users\Omar\Desktop\c_sharp_stack\code review code\MobaGame\bin\Debug\net6.0\MobaGame.dll
+C:\Users\Omar\Desktop\c_sharp_stack\code review code\MobaGame\bin\Debug\net6.0\MobaGame.pdb
+C:\Users\Omar\Desktop\c_sharp_stack\code review code\MobaGame\obj\Debug\net6.0\MobaGame.dll
+C:\Users\Omar\Desktop\c_sharp_stack\code review code\MobaGame\obj\Debug\net6.0\refint\MobaGame.dll
+C:\Users\Omar\Desktop\c_sharp_stack\code review code\MobaGame\obj\Debug\net6.0\MobaGame.pdb
+C:\Users\Omar\Desktop\c_sharp_stack\code review code\MobaGame\obj\Debug\net6.0\MobaGame.genruntimeconfig.cache
+C:\Users\Omar\Desktop\c_sharp_stack\code review code\MobaGame\obj\Debug\net6.0\ref\MobaGame.dll

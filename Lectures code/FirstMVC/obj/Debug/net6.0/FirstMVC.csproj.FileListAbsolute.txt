@@ -1,0 +1,52 @@
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\bin\Debug\net6.0\appsettings.json
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\bin\Debug\net6.0\FirstMVC.staticwebassets.runtime.json
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\bin\Debug\net6.0\FirstMVC.exe
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\bin\Debug\net6.0\FirstMVC.deps.json
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\bin\Debug\net6.0\FirstMVC.runtimeconfig.json
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\bin\Debug\net6.0\FirstMVC.dll
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\bin\Debug\net6.0\FirstMVC.pdb
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\FirstMVC.csproj.AssemblyReference.cache
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\FirstMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\FirstMVC.AssemblyInfoInputs.cache
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\FirstMVC.AssemblyInfo.cs
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\FirstMVC.csproj.CoreCompileInputs.cache
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\FirstMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\FirstMVC.RazorAssemblyInfo.cache
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\FirstMVC.RazorAssemblyInfo.cs
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\scopedcss\bundle\FirstMVC.styles.css
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\scopedcss\projectbundle\FirstMVC.bundle.scp.css
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\FirstMVC.dll
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\refint\FirstMVC.dll
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\FirstMVC.pdb
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\FirstMVC.genruntimeconfig.cache
+C:\Users\waelh\OneDrive\Desktop\Wael-Feb-C-Sharp-dotent-Repo\Week3\Day2\FirstMVC\obj\Debug\net6.0\ref\FirstMVC.dll
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\bin\Debug\net6.0\appsettings.json
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\bin\Debug\net6.0\FirstMVC.staticwebassets.runtime.json
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\bin\Debug\net6.0\FirstMVC.exe
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\bin\Debug\net6.0\FirstMVC.deps.json
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\bin\Debug\net6.0\FirstMVC.runtimeconfig.json
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\bin\Debug\net6.0\FirstMVC.dll
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\bin\Debug\net6.0\FirstMVC.pdb
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\FirstMVC.csproj.AssemblyReference.cache
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\FirstMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\FirstMVC.AssemblyInfoInputs.cache
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\FirstMVC.AssemblyInfo.cs
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\FirstMVC.csproj.CoreCompileInputs.cache
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\FirstMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\FirstMVC.RazorAssemblyInfo.cache
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\FirstMVC.RazorAssemblyInfo.cs
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\scopedcss\bundle\FirstMVC.styles.css
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\scopedcss\projectbundle\FirstMVC.bundle.scp.css
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\FirstMVC.dll
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\refint\FirstMVC.dll
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\FirstMVC.pdb
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\FirstMVC.genruntimeconfig.cache
+C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\FirstMVC\obj\Debug\net6.0\ref\FirstMVC.dll

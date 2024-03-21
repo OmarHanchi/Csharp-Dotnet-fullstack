@@ -1,0 +1,15 @@
+C:\Users\Omar\Desktop\c_sharp_stack\oop_lecture\obj\Debug\net6.0\oop_lecture.csproj.AssemblyReference.cache
+C:\Users\Omar\Desktop\c_sharp_stack\oop_lecture\obj\Debug\net6.0\oop_lecture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Omar\Desktop\c_sharp_stack\oop_lecture\obj\Debug\net6.0\oop_lecture.AssemblyInfoInputs.cache
+C:\Users\Omar\Desktop\c_sharp_stack\oop_lecture\obj\Debug\net6.0\oop_lecture.AssemblyInfo.cs
+C:\Users\Omar\Desktop\c_sharp_stack\oop_lecture\obj\Debug\net6.0\oop_lecture.csproj.CoreCompileInputs.cache
+C:\Users\Omar\Desktop\c_sharp_stack\oop_lecture\bin\Debug\net6.0\oop_lecture.exe
+C:\Users\Omar\Desktop\c_sharp_stack\oop_lecture\bin\Debug\net6.0\oop_lecture.deps.json
+C:\Users\Omar\Desktop\c_sharp_stack\oop_lecture\bin\Debug\net6.0\oop_lecture.runtimeconfig.json
+C:\Users\Omar\Desktop\c_sharp_stack\oop_lecture\bin\Debug\net6.0\oop_lecture.dll
+C:\Users\Omar\Desktop\c_sharp_stack\oop_lecture\bin\Debug\net6.0\oop_lecture.pdb
+C:\Users\Omar\Desktop\c_sharp_stack\oop_lecture\obj\Debug\net6.0\oop_lecture.dll
+C:\Users\Omar\Desktop\c_sharp_stack\oop_lecture\obj\Debug\net6.0\refint\oop_lecture.dll
+C:\Users\Omar\Desktop\c_sharp_stack\oop_lecture\obj\Debug\net6.0\oop_lecture.pdb
+C:\Users\Omar\Desktop\c_sharp_stack\oop_lecture\obj\Debug\net6.0\oop_lecture.genruntimeconfig.cache
+C:\Users\Omar\Desktop\c_sharp_stack\oop_lecture\obj\Debug\net6.0\ref\oop_lecture.dll
