@@ -1,0 +1,15 @@
+E:\Dojo\CCC\practice\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.csproj.AssemblyReference.cache
+E:\Dojo\CCC\practice\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dojo\CCC\practice\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.AssemblyInfoInputs.cache
+E:\Dojo\CCC\practice\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.AssemblyInfo.cs
+E:\Dojo\CCC\practice\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.csproj.CoreCompileInputs.cache
+E:\Dojo\CCC\practice\DebuggingPractice\bin\Debug\net6.0\DebuggingPractice.exe
+E:\Dojo\CCC\practice\DebuggingPractice\bin\Debug\net6.0\DebuggingPractice.deps.json
+E:\Dojo\CCC\practice\DebuggingPractice\bin\Debug\net6.0\DebuggingPractice.runtimeconfig.json
+E:\Dojo\CCC\practice\DebuggingPractice\bin\Debug\net6.0\DebuggingPractice.dll
+E:\Dojo\CCC\practice\DebuggingPractice\bin\Debug\net6.0\DebuggingPractice.pdb
+E:\Dojo\CCC\practice\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.dll
+E:\Dojo\CCC\practice\DebuggingPractice\obj\Debug\net6.0\refint\DebuggingPractice.dll
+E:\Dojo\CCC\practice\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.pdb
+E:\Dojo\CCC\practice\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.genruntimeconfig.cache
+E:\Dojo\CCC\practice\DebuggingPractice\obj\Debug\net6.0\ref\DebuggingPractice.dll

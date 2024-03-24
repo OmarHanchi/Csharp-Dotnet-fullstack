@@ -1,0 +1,159 @@
+Starting up a new Console App
+Manually:
+    mkdir FirstCSharp
+    cd FirstCSharp
+    dotnet new console
+
+One line:
+    dotnet new console -o FirstCSharp
+
+//! =====================  arrays : ============================== 
+int [] newarray = new int [] {1,2,3,4,5}
+int arrayOfint = {1,2,3,4,5}
+
+//
+
+string[] myCars = new string[] { "Mazda Miata", "Ford Model T", "Dodge Challenger", "Nissan 300zx"}; 
+foreach (string car in myCars)
+{
+    // We no longer need the index, because variable 'car' already represents each indexed value
+    Console.WriteLine($"I own a {car}");
+}
+
+//
+//
+//
+
+for (int idx = 0; idx < myCars.Length; idx++)
+{
+    Console.WriteLine($"I own a {myCars[idx]}");
+}
+
+//Iterating through a list
+//we can easily loop through the list of them with a C-style for loop
+//this time, however, Count is the attribute for a number of items.
+Console.WriteLine("The current manufacturers we have seen are:");
+for (var idx = 0; idx < bikes.Count; idx++)
+{
+    Console.WriteLine("-" + bikes[idx]);
+}
+// Insert a new item between a specific index
+bikes.Insert(2, "Yamaha");
+//Removal from Generic List
+//Remove is a lot like Javascript array pop, but searches for a specified value
+//In this case we are removing all manufacturers located in Japan
+bikes.Remove("Suzuki");
+bikes.Remove("Yamaha");
+bikes.RemoveAt(0); //RemoveAt has no return value however
+//The updated list can then be iterated through using a foreach loop
+Console.WriteLine("List of Non-Japanese Manufacturers:");
+foreach (string manu in bikes)
+{
+    Console.WriteLine("-" + manu);
+}
+
+
+
+
+//Dictionary Class
+Dictionary<string,string> profile = new Dictionary<string,string>();
+//Almost all the methods that exists with Lists are the same with Dictionaries
+profile.Add("Name", "Speros");
+profile.Add("Language", "PHP");
+profile.Add("Location", "Greece");
+Console.WriteLine("Instructor Profile");
+Console.WriteLine("Name - " + profile["Name"]);
+Console.WriteLine("From - " + profile["Location"]);
+Console.WriteLine("Favorite Language - " + profile["Language"]);
+//
+//..........
+foreach (KeyValuePair<string,string> entry in profile)
+{
+    Console.WriteLine(entry.Key + " - " + entry.Value);
+
+}
+
+
+
+// ============== for loops ========================
+
+ // For loop that INCLUDES 10
+for(int i = 1; i <= 10; i++)
+{
+    Console.WriteLine(i);
+}
+// For loop that EXCLUDES 10
+for(int i = 1; i < 10; i++)
+{
+    Console.WriteLine(i);
+}
+
+// other one ; 
+
+int start = 0 ; 
+int end = 10 ; 
+//loop from start to end including end 
+for (int i = start ; i<= end ; i++)
+{
+    console.writeline(i);
+}
+//loop from start to end excluding end 
+for (int i =start;i<end;i++)
+{
+    console.writeline (i);
+}
+
+
+// ===================  while loops =============
+ // Our original for loop
+for(int i = 1; i <= 10; i++)
+{
+    Console.WriteLine(i);
+}
+// Our while loop
+int i = 1;
+while(i <=10)
+{
+    Console.WriteLine(i);
+    i++;
+}
+
+//! ========= making  new mvc ==================
+
+dotnet new mvc --no-https -o YourProjectName
+
+
+
+//! ============ dictionnary ==========
+Dictionary<string,string> profile = new Dictionary<string,string>();
+// We add values to our dictionary the same way we add in Lists
+// But remember to specify the key AND value
+// When we add, we first specify the key, then the value
+profile.Add("Name", "Sandra");
+profile.Add("Language", "C#");
+profile.Add("Location", "England");
+// Now we can render the data like so
+Console.WriteLine("Student profile");
+// Notice how we use ["KeyName"] to pull the value out
+Console.WriteLine("Name - " + profile["Name"]);
+Console.WriteLine("From - " + profile["Location"]);
+Console.WriteLine("Favorite Language - " + profile["Language"]);
+ 
+//?  loop inside the dictionnary 
+Dictionary<string,string> profile = new Dictionary<string,string>();
+// We add values to our dictionary the same way we add in Lists
+// But remember to specify the key AND value
+// When we add, we first specify the key, then the value
+profile.Add("Name", "Sandra");
+profile.Add("Language", "C#");
+profile.Add("Location", "England");
+// Now we can render the data like so
+Console.WriteLine("Student profile");
+// Notice how we use ["KeyName"] to pull the value out
+Console.WriteLine("Name - " + profile["Name"]);
+Console.WriteLine("From - " + profile["Location"]);
+Console.WriteLine("Favorite Language - " + profile["Language"]);
+
+
+
+

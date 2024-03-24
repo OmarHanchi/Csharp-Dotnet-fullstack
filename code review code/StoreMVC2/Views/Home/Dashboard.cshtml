@@ -1,0 +1,20 @@
+﻿@model List<Product>
+<div class="d-flex gap-4">
+    
+@foreach (Product p in Model )
+{
+    <div class="border border-2 rounded-3">
+        <img src="@p.Image" alt=""width="200px" >
+        <h4> @p.Name</h4>
+        <h5>@p.Price</h5>
+        <a asp-action="OneProduct" asp-route-productId="@p.Id" class="btn btn-primary">View</a>
+
+        
+        <form class="d-flex " action="Post">
+            <input type="number" name="qty" value="1" >
+            <button class="btn btn-outline-dark">Buy</button>
+        </form>
+    </div>
+}
+
+</div>
