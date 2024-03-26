@@ -6,15 +6,15 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = MyFirstMVC
-build_property.RootNamespace = MyFirstMVC
-build_property.ProjectDir = C:\Users\Omar\Desktop\c_sharp_stack\ASP_MVC1\MyFirstMVC\
+build_property.RootNamespace = RazorFun
+build_property.RootNamespace = RazorFun
+build_property.ProjectDir = c:\Users\Omar\Desktop\c_sharp_stack\ASP_MVC1\RazorFun\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Omar\Desktop\c_sharp_stack\ASP_MVC1\MyFirstMVC
+build_property.MSBuildProjectDirectory = c:\Users\Omar\Desktop\c_sharp_stack\ASP_MVC1\RazorFun
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Omar/Desktop/c_sharp_stack/ASP_MVC1/MyFirstMVC/Views/Hello/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9cSW5kZXguY3NodG1s
+[c:/Users/Omar/Desktop/c_sharp_stack/ASP_MVC1/RazorFun/Views/RazorFun/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF6b3JGdW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

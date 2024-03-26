@@ -1,0 +1,30 @@
+<h1>Here are some delicious foods!</h1>
+
+@{
+    List<string> FoodList = new List<string>()
+    {
+        "Apple Pie",
+        "Pizza",
+        "Cinnamon Rolls",
+        "Lasagna",
+        "Donuts",
+        "Chocolate Cake",
+        "Burritos"
+    };
+}
+ @foreach (var food in FoodList)
+ {
+    
+       <p style="@(food.ToLower().StartsWith("c") ? "color: red;" : "")">
+        @food
+       </p> 
+        @* <p>
+        @if (food.ToLower().StartsWith("c"))
+        {
+            <span style="color: red;"> @food </span>
+        }
+        else
+        @food *@
+        
+    </p>
+ }

@@ -19,3 +19,5 @@ C:\Users\Omar\Desktop\c_sharp_stack\ASP_MVC1\MyFirstMVC\obj\Debug\net6.0\refint\
 C:\Users\Omar\Desktop\c_sharp_stack\ASP_MVC1\MyFirstMVC\obj\Debug\net6.0\MyFirstMVC.pdb
 C:\Users\Omar\Desktop\c_sharp_stack\ASP_MVC1\MyFirstMVC\obj\Debug\net6.0\MyFirstMVC.genruntimeconfig.cache
 C:\Users\Omar\Desktop\c_sharp_stack\ASP_MVC1\MyFirstMVC\obj\Debug\net6.0\ref\MyFirstMVC.dll
+C:\Users\Omar\Desktop\c_sharp_stack\ASP_MVC1\MyFirstMVC\obj\Debug\net6.0\MyFirstMVC.RazorAssemblyInfo.cache
+C:\Users\Omar\Desktop\c_sharp_stack\ASP_MVC1\MyFirstMVC\obj\Debug\net6.0\MyFirstMVC.RazorAssemblyInfo.cs
