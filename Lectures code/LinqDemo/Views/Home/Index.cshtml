@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1> all games in the database </h1>
+    <table class="table table-striped">
+        <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Genre</th>
+            <th>Rating</th>
+            <th>Platform</th>
+            @foreach (Game g in ViewBag.allGamesFromData )
+            {
+                <tr>
+                    <td>@g.Title</td>
+                     <td>@g.Price</td>
+                      <td>@g.Genre</td>
+                       <td>@g.Rating</td>
+                        <td>@g.Platform</td>
+                </tr>
+            }
+        </tr>
+
+
+
+
+    </table>
+
+    <hr>
+    <h2>Most expensive game with the price of @ViewBag.MostExpensive </h2>
+    <hr>
+    <h2>The total of all games together  is :  @ViewBag.TotalPrice </h2>
+
+<h1> all titles of the games in the database </h1>
+    <table class="table table-striped">
+        <tr>
+            <th>Titles</th>
+            @foreach (string g in ViewBag.AllTitles )
+            {
+                <tr>
+                    <td>@g</td>
+                   
+                </tr>
+            }
+        </tr>
+
+
+
+
+    </table>
+
+<hr>
+            <h3> is this game exist or not : @ViewBag.MatchTitle </h3>
+
+</div>

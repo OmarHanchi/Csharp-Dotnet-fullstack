@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div>
+    <h6> 1. Use LINQ to find the first eruption that is in Chile and print the result.</h6>
+    <p>  =====>  The first one is @ViewBag.FirstChileEruption.VolcanoName</p>
+    <hr>
+    <h6>2. Find the first eruption from the "Hawaiian Is" location and print it. If none is found, print "No Hawaiian Is Eruption found."</h6>
+    <p>the first volcano in Hawaiin is @ViewBag.FirstHawaiinEruption.VolcanoName </p>
+    <hr>
+    <h6>3. Find the first eruption from the "Greenland" location and print it. If none is found, print "No Greenland Eruption found."</h6>
+    <p>
+        Checking for  first volcano 🌋  in Greenland 🗺️ : 
+        <br>
+        @(
+            ViewBag.FirstGreenlandEruption is Eruption Thiseruption 
+                ? Thiseruption.VolcanoName 
+                : ViewBag.FirstGreenlandEruption
+        )
+    </p>
+    <hr>
+    <h6>4. Find the first eruption that is after the year 1900 AND in "New Zealand", then print it.</h6>
+    <p>
+          First volcano 🌋  in Newzealand 🗺️ :
+          <br>
+           @ViewBag.FirstInNewZealand.VolcanoName
+
+    </p>
+    <hr>
+    <h6>5. Find all eruptions where the volcano's elevation is over 2000m and print them.</h6>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Volcano name</th>
+                <th>Volcano Year</th>
+                <th>Volcano Location</th>
+                <th>Volcano ElevationInMeters</th>
+                <th>Volcano Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var Eruption in ViewBag.EruptionsOver2000m)
+            {
+                <tr>
+                    <td>@Eruption.VolcanoName</td>
+                    <td>@Eruption.Year</td>
+                    <td>@Eruption.Location</td>
+                    <td>@Eruption.ElevationInMeters</td>
+                    <td>@Eruption.Type</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <hr>
+    <h6> 6. Find all eruptions where the volcano's name starts with "L" and print them. Also print the number of eruptions found.</h6>
+    <h6>There are @ViewBag.EruptionsStartWithLCount Volcanos start with "L"</h6>
+      <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Volcano name</th>
+                <th>Volcano Year</th>
+                <th>Volcano Location</th>
+                <th>Volcano ElevationInMeters</th>
+                <th>Volcano Type</th>
+                <th>Volcanos Count </th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var Eruption in ViewBag.EruptionsStartWithL)
+            {
+                <tr>
+                    <td>@Eruption.VolcanoName</td>
+                    <td>@Eruption.Year</td>
+                    <td>@Eruption.Location</td>
+                    <td>@Eruption.ElevationInMeters</td>
+                    <td>@Eruption.Type</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <hr>
+
+</div>

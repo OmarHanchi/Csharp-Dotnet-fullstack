@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DojoSurvey", "DojoSurvey.csproj", "{7D9DDBE4-56A6-486F-AA9F-3EF7851EE2C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D9DDBE4-56A6-486F-AA9F-3EF7851EE2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D9DDBE4-56A6-486F-AA9F-3EF7851EE2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D9DDBE4-56A6-486F-AA9F-3EF7851EE2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D9DDBE4-56A6-486F-AA9F-3EF7851EE2C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39109489-8FDF-497D-AF1B-C71F41F3535B}
+	EndGlobalSection
+EndGlobal

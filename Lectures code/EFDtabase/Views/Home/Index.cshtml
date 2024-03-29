@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Song
+<div class="text-center">
+    <h1 class="display-4">Add a Song</h1>
+    <form asp-action="CreatingSong" asp-controller="Home" method="post">
+        <div class="mb3">
+            <label asp-for="Name"></label>
+            <input asp-for= "Name" class="form-control">
+            <span asp-validation-for="Name"></span>
+        </div>    
+         <div class="mb3">
+            <label asp-for="Genre"></label>
+            <input asp-for= "Genre" class="form-control">
+            <span asp-validation-for="Genre"></span>
+        </div>   
+         <div class="mb3">
+            <label asp-for="Year"></label>
+            <input asp-for= "Year" class="form-control" >
+            <span asp-validation-for="Year"></span>
+        </div>   
+        <div class="mb3">
+            <input type="submit" value="submit" class="btn btn-info">
+        </div>
+
+
+    </form>
+    
+</div>
+

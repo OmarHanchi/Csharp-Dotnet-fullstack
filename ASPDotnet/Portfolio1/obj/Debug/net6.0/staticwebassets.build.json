@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "PWEJRXUtgLbKIWN8bpj/QBDWqtwbnDogs0g5XNbGFsI=",
+  "Source": "Portfolio1",
+  "BasePath": "_content/Portfolio1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Portfolio1\\wwwroot",
+      "Source": "Portfolio1",
+      "ContentRoot": "C:\\Users\\Omar\\Desktop\\c_sharp_stack\\ASPDotnet\\Portfolio1\\wwwroot\\",
+      "BasePath": "_content/Portfolio1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Omar\\Desktop\\c_sharp_stack\\ASPDotnet\\Portfolio1\\wwwroot\\Images\\4123763.png",
+      "SourceId": "Portfolio1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Omar\\Desktop\\c_sharp_stack\\ASPDotnet\\Portfolio1\\wwwroot\\",
+      "BasePath": "_content/Portfolio1",
+      "RelativePath": "Images/4123763.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\4123763.png"
+    }
+  ]
+}
