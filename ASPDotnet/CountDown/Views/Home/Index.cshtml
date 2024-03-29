@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="border rounded p-3">
+                  
+                    <h2>Start Time</h2>
+                    <p>@DateTime.Now.ToString("MMMM dd, yyyy hh:mm tt")</p>
+                </div>
+            </div>
+            <div class="col-md-2"></div> <!-- Column for gap -->
+            <div class="col-md-5">
+                <div class="border rounded p-3">
+                    
+                    <h2>End Time</h2>
+                    <p>@ViewBag.TargetDate.ToString("MMMM dd, yyyy hh:mm tt") </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-6 text-center"> 
+            <div class="border rounded p-3">
+                    
+                <h2>End Time</h2>
+                <p>@ViewBag.FormattedTime</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
