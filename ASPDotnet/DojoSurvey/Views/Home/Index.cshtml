@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="/result" method="post">
+                    <div class="form-group">
+                        <label for="Name">Your Name:</label>
+                        <input type="text" class="form-control" name="Name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Location">Dojo Location:</label>
+                        <select class="form-control" name="Location">
+                            <option value="">Select Location</option>
+                            <option value="San Jose">San Jose</option>
+                            <option value="Seattle">Seattle</option>
+                            <option value="Los Angeles">Los Angeles</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="FavouriteLanguage">Favorite Language:</label>
+                        <select class="form-control" name="FavouriteLanguage">
+                            <option value="">Select Language</option>
+                            <option value="C#">C#</option>
+                            <option value="Python">Python</option>
+                            <option value="JavaScript">JavaScript</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Comment">Comment (optional):</label>
+                        <textarea class="form-control" name="comment" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

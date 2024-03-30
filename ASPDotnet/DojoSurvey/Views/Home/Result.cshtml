@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+@model UserInfo;
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">Submitted Information:</h1>
+                        <p><strong>Name:</strong> @Model.Name</p>
+                        <p><strong>Location:</strong> @Model.Location</p>
+                        <p><strong>Favorite Language:</strong> @Model.FavouriteLanguage</p>
+                        <p><strong>Comment:</strong> @Model.Comment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
