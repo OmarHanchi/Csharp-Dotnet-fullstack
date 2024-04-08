@@ -1,0 +1,34 @@
+@model Book
+
+<H1>Add A New Book</H1>
+<div >
+    <form   asp-action="AddBook" asp-controller="Home">
+        <div class=" mb-3">
+            <label asp-for="Title" class="form-label"></label>
+            <input asp-for="Title">
+            <span class="text-danger" asp-validation-for="Title"></span>
+        </div>
+         <div class=" mb-3">
+            <label asp-for="Author" class="form-label"></label>
+            <input asp-for="Author">
+            <span class="text-danger" asp-validation-for="Author"></span>
+        </div>
+         <div class="mb-3">
+            <label asp-for="PublicationYear" class="form-label"></label>
+            <input asp-for="PublicationYear">
+        </div>
+         <div class="mb-3">
+            <label asp-for="IsAvailble" class="form-label"></label>
+            <input asp-for="IsAvailble">
+        </div>
+         <div class="mb-3">
+            <label asp-for="Description" class="form-label"></label>
+            <input asp-for="Description">
+        </div>
+
+        <button class="btn btn-info" type="submit">Add</button>
+        
+         
+
+    </form>
+ </div>

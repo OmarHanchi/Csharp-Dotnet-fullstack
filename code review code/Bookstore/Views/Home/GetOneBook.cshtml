@@ -1,0 +1,16 @@
+@model Book 
+<h2>@Model.Title</h2>
+<p><span>@Model.Author</span></p>
+<p><span>Publication year : @Model.PublicationYear</span></p>
+<p><span>@Model.Description</span></p>
+@if(Model.IsAvailble){
+    <p><span class="text-success">Available</span></p>
+
+}
+else
+{
+     <p><span class="text-danger">Not Available</span></p>
+}
+
+
+

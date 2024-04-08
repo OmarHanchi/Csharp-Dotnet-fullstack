@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PWEJRXUtgLbKIWN8bpj/QBDWqtwbnDogs0g5XNbGFsI=",
+  "Hash": "gGeqejGRenJ8F5PMtGoZXXLHr2SHrB1T3nLytEwO/S4=",
   "Source": "Portfolio1",
   "BasePath": "_content/Portfolio1",
   "Mode": "Default",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Omar\\Desktop\\c_sharp_stack\\ASPDotnet\\Portfolio1\\wwwroot\\css\\style.css",
+      "SourceId": "Portfolio1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Omar\\Desktop\\c_sharp_stack\\ASPDotnet\\Portfolio1\\wwwroot\\",
+      "BasePath": "_content/Portfolio1",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\Omar\\Desktop\\c_sharp_stack\\ASPDotnet\\Portfolio1\\wwwroot\\Images\\032db574a23b523b79481d8d222a41ca.jpg",
+      "SourceId": "Portfolio1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Omar\\Desktop\\c_sharp_stack\\ASPDotnet\\Portfolio1\\wwwroot\\",
+      "BasePath": "_content/Portfolio1",
+      "RelativePath": "Images/032db574a23b523b79481d8d222a41ca.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\032db574a23b523b79481d8d222a41ca.jpg"
+    },
     {
       "Identity": "C:\\Users\\Omar\\Desktop\\c_sharp_stack\\ASPDotnet\\Portfolio1\\wwwroot\\Images\\4123763.png",
       "SourceId": "Portfolio1",

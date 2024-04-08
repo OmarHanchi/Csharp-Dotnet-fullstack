@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<Book>
+<div class="text-center">
+    <h1 class="display-4">All Books</h1>
+    <table>
+        <thead>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publication year</th>
+            <th>Available</th>
+            <th>Actions</th>
+
+        </thead>
+        <tbody>
+            @foreach(var b in Model)
+            {
+                <tr>
+                    <td>@b.Title</td>
+                    <td>@b.Author</td>
+                    <td>@b.PublicationYear</td>
+                    <td>@(b.IsAvailble? "Yes" : "No")</td>
+                    <td>
+                        <a asp-action="GetOneBook" asp-route-bookId=b.Id>View</a>
+                        <a href="">Edit</a>
+                        <a href="">Delete</a>
+                    </td>
+
+                </tr>
+
+            }
+        </tbody>
+    </table>
+
+   
+</div>
