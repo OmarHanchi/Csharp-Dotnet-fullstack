@@ -1,0 +1,40 @@
+﻿@model Survey;
+<div class="text-center">
+    <div class="form-control flex-">
+
+
+        <form action="register" method="post">    
+            <div class="mb-3">
+                 <label>Your Name:</label>    
+                <input type="text" name="Name">  
+            </div>
+
+
+
+           <div class="mb-3">
+            <label for="Location">Dojo Location :</label>    
+            <select name="Location">     
+                <option value="Tunis">Tunis</option>        
+                <option value="Bizerte">Bizerte</option>        
+                <option value="Beja">Beja</option>        
+                <option value="Tataouine">Tataouine</option>    
+            </select>    
+           </div>
+
+
+            <div class="mb-3">
+                <label for="FavouriteLanguage">Favourite Language:</label>   
+                <select name="FavouriteLanguage">     
+                    <option value="C#">C#</option>        
+                    <option value="Java">Java</option>        
+                    <option value="Python">Python</option>        
+                    <option value="Js">Js</option>    
+                </select>
+            </div>
+
+
+            <input class="btn btn-info" type="submit" value="Submit"  />
+        </form>
+
+    </div>
+</div>
