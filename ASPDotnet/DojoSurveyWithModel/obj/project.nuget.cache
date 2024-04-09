@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1uqC6wqV8lg4SlB8iXa3RSbGKnuyD05xI+TCqPbwWlFnSFT7EgE359HIL7Ec7wHNP+XtES0Lto1+5uY5YNY8iw==",
+  "dgSpecHash": "AXVTsbgCY6F1ToEda7kycRoYe3YA3pxaEiTnl6GLl+wExJhI8oZChPBpZOmtQ15qZHTrf5U1TUROxNrdcQgMqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Omar\\Desktop\\c_sharp_stack\\Lectures code\\DojoSurveyWithModel\\DojoSurveyWithModel.csproj",
+  "projectFilePath": "C:\\Users\\Omar\\Desktop\\c_sharp_stack\\ASPDotnet\\DojoSurveyWithModel\\DojoSurveyWithModel.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -3,34 +3,47 @@
     <div class="form-control flex-">
 
 
-        <form action="register" method="post">    
+        <form asp-action="register" asp-controller="Home" method="post">    
             <div class="mb-3">
-                 <label>Your Name:</label>    
-                <input type="text" name="Name">  
+                 <label asp-for="Name">Your Name:</label>    
+                <input asp-for="Name">  
+                <span asp-validation-for="Name" class="text-danger"></span>
             </div>
 
 
 
            <div class="mb-3">
-            <label for="Location">Dojo Location :</label>    
-            <select name="Location">     
+            <label asp-for="Location">Dojo Location :</label>    
+            <select asp-for="Location">     
                 <option value="Tunis">Tunis</option>        
                 <option value="Bizerte">Bizerte</option>        
                 <option value="Beja">Beja</option>        
                 <option value="Tataouine">Tataouine</option>    
-            </select>    
+            </select>
+            <span asp-validation-for="Location"></span>
+    
            </div>
 
 
             <div class="mb-3">
-                <label for="FavouriteLanguage">Favourite Language:</label>   
+                <label asp-for="FavouriteLanguage">Favourite Language:</label>   
                 <select name="FavouriteLanguage">     
                     <option value="C#">C#</option>        
                     <option value="Java">Java</option>        
                     <option value="Python">Python</option>        
                     <option value="Js">Js</option>    
                 </select>
+                <span asp-validation-for="FavouriteLanguage"></span>
+
             </div>
+
+            <div class="mb-3">
+                <label asp-for="Comment">Favourite Language:</label>  
+                <input asp-for="Comment"> 
+               <span asp-validation-for="Comment" class="text-danger"></span>
+            </div>
+
+
 
 
             <input class="btn btn-info" type="submit" value="Submit"  />

@@ -1,9 +1,18 @@
 #pragma warning disable CS8618
-namespace DojoSurveyWithModel.Models;
+using System.ComponentModel.DataAnnotations;
+
+namespace DojoSurveyWithModel.Models
+{
 public class Survey 
 {
-    public string Name {get;set;}
-    public String Location {get;set;}
-    public String FavouriteLanguage {get;set;}
-    public string Comment {get;set;}
+  [MinLength(3, ErrorMessage ="Name should be no less than 3 characters")]
+  public string Name {get;set;}
+  public string Location {get;set;}  
+  
+  [Required]
+  public string FavouriteLanguage {get;set;}
+
+  [MinLength(20,ErrorMessage ="comment should be more than 20 characters.")]
+  public string Comment {get;set;}
+}
 }

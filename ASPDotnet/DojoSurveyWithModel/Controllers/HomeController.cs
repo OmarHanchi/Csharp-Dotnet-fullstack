@@ -21,13 +21,19 @@ public class HomeController : Controller
         [HttpPost("register")]
         public IActionResult Register(Survey ninja)
         {
-     
-        return RedirectToAction("DisplayResults", ninja); 
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("DisplayResults", ninja); 
+            }
+            else
+            {
+                return View("Index");
+            }
         }
 
         public IActionResult DisplayResults(Survey ninja)
         {
-        return View("Results",ninja); 
+            return View("Results",ninja); 
         }
     public IActionResult Privacy()
     {

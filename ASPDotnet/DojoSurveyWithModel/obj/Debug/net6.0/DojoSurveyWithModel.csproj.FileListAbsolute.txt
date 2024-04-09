@@ -24,3 +24,29 @@ C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\DojoSurveyWithModel\obj\Debug\
 C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\DojoSurveyWithModel\obj\Debug\net6.0\DojoSurveyWithModel.pdb
 C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\DojoSurveyWithModel\obj\Debug\net6.0\DojoSurveyWithModel.genruntimeconfig.cache
 C:\Users\Omar\Desktop\c_sharp_stack\Lectures code\DojoSurveyWithModel\obj\Debug\net6.0\ref\DojoSurveyWithModel.dll
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\bin\Debug\net6.0\appsettings.json
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\bin\Debug\net6.0\DojoSurveyWithModel.staticwebassets.runtime.json
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\bin\Debug\net6.0\DojoSurveyWithModel.exe
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\bin\Debug\net6.0\DojoSurveyWithModel.deps.json
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\bin\Debug\net6.0\DojoSurveyWithModel.runtimeconfig.json
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\bin\Debug\net6.0\DojoSurveyWithModel.dll
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\bin\Debug\net6.0\DojoSurveyWithModel.pdb
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\DojoSurveyWithModel.csproj.AssemblyReference.cache
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\DojoSurveyWithModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\DojoSurveyWithModel.AssemblyInfoInputs.cache
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\DojoSurveyWithModel.AssemblyInfo.cs
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\DojoSurveyWithModel.csproj.CoreCompileInputs.cache
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\DojoSurveyWithModel.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\DojoSurveyWithModel.RazorAssemblyInfo.cache
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\DojoSurveyWithModel.RazorAssemblyInfo.cs
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\scopedcss\bundle\DojoSurveyWithModel.styles.css
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\scopedcss\projectbundle\DojoSurveyWithModel.bundle.scp.css
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\DojoSurveyWithModel.dll
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\refint\DojoSurveyWithModel.dll
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\DojoSurveyWithModel.pdb
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\DojoSurveyWithModel.genruntimeconfig.cache
+C:\Users\Omar\Desktop\c_sharp_stack\ASPDotnet\DojoSurveyWithModel\obj\Debug\net6.0\ref\DojoSurveyWithModel.dll
