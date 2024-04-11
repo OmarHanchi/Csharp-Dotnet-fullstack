@@ -1,0 +1,10 @@
+﻿@model DateModel  
+<h2>Date Validation</h2>
+<form asp-action="ValidateDate">
+    <div class="form-group">
+        <label for="DateInput">Enter a Date:</label>
+        <input class="form-control" asp-for="DateInput">
+        <span asp-validation-for="DateInput" class="text-danger"></span>  
+        </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
