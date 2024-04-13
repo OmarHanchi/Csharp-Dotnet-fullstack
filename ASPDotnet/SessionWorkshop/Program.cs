@@ -2,6 +2,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpContextAccessor();  
+builder.Services.AddSession();  
+
 
 var app = builder.Build();
 
@@ -10,6 +13,8 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+
+app.UseSession();
 app.UseStaticFiles();
 
 app.UseRouting();

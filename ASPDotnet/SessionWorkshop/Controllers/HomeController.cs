@@ -12,11 +12,58 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
-
     public IActionResult Index()
     {
         return View();
     }
+
+       
+    [HttpPost]
+    public IActionResult Register(Player model)
+    {
+         if (ModelState.IsValid)
+        {
+            HttpContext.Session.SetString("UserName", model.Name);
+            return RedirectToAction ("Dashboard");
+        }
+       return View ("Index");
+    }
+
+
+    [HttpPost ("logout")]
+    public IActionResult Logout ()
+    {
+            HttpContext.Session.Clear();
+            return View ("Index");
+    }
+
+    
+    [HttpGet("dashboard")]
+    public IActionResult Dashboard (int CurrentValue)
+    {
+        string? UserName = HttpContext.Session.GetString("UserName");
+        if (UserName == null)
+        {
+            return RedirectToAction ("Index");
+        }
+       
+        return View ();
+    }
+
+
+    //* this is another way using is null or emty 
+    //  public IActionResult Dashboard()
+    // {
+    //     // Check if user name is stored in session
+    //     string userName = HttpContext.Session.GetString("userName");
+    //     if (string.IsNullOrEmpty(userName))
+    //     {
+    //         return RedirectToAction("Index"); // Redirect to login if no name in session
+    //     }
+
+    //     // Your dashboard logic using userName...
+    //     return View();
+    // }
 
     public IActionResult Privacy()
     {

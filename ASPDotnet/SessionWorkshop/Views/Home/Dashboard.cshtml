@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-10">
+            <h1>Welcome @Context.Session.GetString("UserName")</h1>
+        </div>
+        <div class="col-2 text-right">
+            <form method="post" asp-controller="Home" asp-action="Logout">
+                <button type="submit" class="btn btn-danger">Logout</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Current Value: @Session.GetInt32("CurrentValue")</h2>
+
+<form method="post">
+    <input type="hidden" name="operation" value="add" />
+    <button type="submit">+1</button>
+
+    <input type="hidden" name="operation" value="subtract" />
+    <button type="submit">-1</button>
+
+    <input type="hidden" name="operation" value="multiply" />
+    <button type="submit">x2</button>
+
+    <input type="hidden" name="operation" value="random" />
+    <button type="submit">Random</button>
+
+    <input type="hidden" name="operation" value="logout" />
+    <button type="submit">Log Out</button>
+</form>
+    </div>
+</div>
