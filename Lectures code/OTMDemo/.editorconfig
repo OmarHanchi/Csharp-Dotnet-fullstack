@@ -1,0 +1,4 @@
+[*.cs]
+
+# CS1633: Unrecognized #pragma directive
+dotnet_diagnostic.CS1633.severity = warning
