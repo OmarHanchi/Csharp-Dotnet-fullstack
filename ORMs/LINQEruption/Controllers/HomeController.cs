@@ -74,31 +74,36 @@ public class HomeController : Controller
         ViewBag.EruptionsStartWithL = EruptionsStartWithL;
         ViewBag.EruptionsStartWithLCount = EruptionsStartWithL.Count();
         //*Find the highest elevation, and print only that integer (Hint: Look up how to use LINQ to find the max!)
-
-
-
+        int highestElevation = Eruptions.Max(e => e.ElevationInMeters);
+        ViewBag.HighestElevation = highestElevation;
         //*Use the highest elevation variable to find and print the name of the Volcano with that elevation.
-
-
-
+        Eruption? highestElevationVolcano = Eruptions.FirstOrDefault(e => e.ElevationInMeters == highestElevation);
+        ViewBag.HighestElevationVolcano = highestElevationVolcano;
+        
         //*Print all Volcano names alphabetically.
-
-
+        List<string> volcanoNames = Eruptions.Select(e => e.VolcanoName).OrderBy(name => name).ToList();
+        ViewBag.VolcanoNames = volcanoNames;
 
         //*Print the sum of all the elevations of the volcanoes combined.
-
+        int SumOfAllElevations = Eruptions.Sum(e=>e.ElevationInMeters);
+        ViewBag.SumOfAllElevations = SumOfAllElevations;
 
 
         //*Print whether any volcanoes erupted in the year 2000 (Hint: look up the Any query)
 
-
+        bool AnyEruptionBefore2000 = Eruptions.Any(e => e.Year < 2000 );
+        ViewBag.AnyEruptionBefore2000 = AnyEruptionBefore2000 ;
 
         //* Find all stratovolcanoes and print just the first three (Hint: look up Take)
-
-
+        List<Eruption> StartVolcanos = Eruptions.Where(e => e.Type.ToLower() == "stratovolcano").Take(3).ToList();
+        ViewBag.StartVolcanos = StartVolcanos ; 
 
         //*Print all the eruptions that happened before the year 1000 CE alphabetically according to Volcano name.
+        List<Eruption> EruptionBeefore1000 = Eruptions.Where(e => e.Year < 1000 ).OrderBy(e =>e.Year).ToList();
+        ViewBag.EruptionBeefore1000 = EruptionBeefore1000;
 
+        List<string> EruptionBeefore1000Names = Eruptions.Where(e => e.Year < 1000 ).OrderBy(e =>e.Year).Select(e => e.VolcanoName).ToList();
+        ViewBag.EruptionBeefore1000Names = EruptionBeefore1000Names;
 
 
         //*Redo the last query, but this time use LINQ to only select the volcano's name so that only the names are printed.

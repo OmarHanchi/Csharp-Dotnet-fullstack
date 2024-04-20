@@ -80,5 +80,82 @@
         </tbody>
     </table>
     <hr>
+    <h6>7. Find the highest elevation, and print only that integer (Hint: Look up how to use LINQ to find the max!)</h6>
+    <p> The highest Elevation is  @ViewBag.HighestElevation</p>
+    <hr>
+    <h6>8. Use the highest elevation variable to find and print the name of the Volcano with that elevation.</h6>
+    <p> The highest volcano is  @ViewBag.HighestElevationVolcano </p>
+    <hr>
+     <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Volcano name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var name in ViewBag.VolcanoNames)
+            {
+                <tr>
+                    <td>@name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <hr>
+    <h2>9. Sum of All Elevations</h2>
+    <p>The sum of all elevations of the volcanoes combined is: @ViewBag.SumOfAllElevations meters</p>
+    @{
+    ViewBag.Title = "Volcano Information";
+}
+
+<hr />
+
+<h2>Volcano Information</h2>
+
+<p>Did any volcanoes erupt in the year 2000? @((bool)ViewBag.AnyEruptionBefore2000 ? "Yes" : "No")</p>
+
+<hr />
+
+<h3>First Three Stratovolcanoes</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Volcano Name</th>
+            <th>Year</th>
+            <th>Location</th>
+            <th>Elevation (meters)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var volcano in ViewBag.StartVolcanos)
+        {
+            <tr>
+                <td>@volcano.VolcanoName</td>
+                <td>@volcano.Year</td>
+                <td>@volcano.Location</td>
+                <td>@volcano.ElevationInMeters</td>
+            </tr>
+        }
+    </tbody>
+</table>
+    <hr>
+    <h3>volcanos before the 1000 ce </h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Volcano Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var volcano in ViewBag.EruptionBeefore1000Names)
+        {
+            <tr>
+                <td>@volcano</td>
+               
+            </tr>
+        }
+    </tbody>
+</table>
+
 
 </div>
