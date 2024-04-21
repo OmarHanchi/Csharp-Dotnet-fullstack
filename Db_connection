@@ -1,0 +1,127 @@
+//* ============  1st step =============
+//? adding packages 
+// dotnet add package Pomelo.EntityFrameworkCore.MySql --version 6.0.1
+// dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.3
+
+
+//* ============  2nd step =============
+//? Create a model with a key and datetime like this : 
+#pragma warning disable CS8618
+using System.ComponentModel.DataAnnotations;
+namespace YourProjectName.Models;
+public class Monster
+{
+    [Key]
+    public int MonsterId { get; set; }
+    public string Name { get; set; } 
+    public int Height { get; set; }
+    public string Description { get; set; }
+    public DateTime CreatedAt { get; set; } = DateTime.Now;
+    public DateTime UpdatedAt { get; set; } = DateTime.Now;
+}
+                
+//* ============  3rd step =============
+//? create a Mycontext.cs  &&  "" change the db name ""
+#pragma warning disable CS8618
+// We can disable our warnings safely because we know the framework will assign non-null values 
+// when it constructs this class for us.
+using Microsoft.EntityFrameworkCore;
+namespace YourProjectName.Models;
+// the MyContext class represents a session with our MySQL database, allowing us to query for or save data
+// DbContext is a class that comes from EntityFramework, we want to inherit its features
+public class MyContext : DbContext 
+{   
+    // This line will always be here. It is what constructs our context upon initialization  
+    public MyContext(DbContextOptions options) : base(options) { }    
+    // We need to create a new DbSet<Model> for every model in our project that is making a table
+    // The name of our table in our database will be based on the name we provide here
+    // This is where we provide a plural version of our model to fit table naming standards    
+    public DbSet<Monster> Monsters { get; set; } 
+}
+
+
+//* ============  4th step =============
+//? add this code to  appsettings.json  &&  "" change the db name ""
+
+{  
+    "Logging": {    
+        "LogLevel": {      
+            "Default": "Information",      
+            "Microsoft.AspNetCore": "Warning"    
+        }  
+    },
+    "AllowedHosts": "*",    
+    "ConnectionStrings":    
+    {        
+        "DefaultConnection": "Server=localhost;port=3306;userid=root;password=root;database=monsterdb;"    
+    }
+}
+
+//* ============  5th step =============
+//? copie and paste this program.cs code 
+// Add this using statement
+using Microsoft.EntityFrameworkCore;
+// You will need access to your models for your context file
+using FirstConnection.Models;
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+
+// Create a variable to hold your connection string
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<MyContext>(options =>
+{
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+});
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+}
+app.UseStaticFiles();
+
+app.UseRouting();
+
+
+app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run();
+
+
+
+//* ============  6th step =============
+//? adding migrations : 
+dotnet ef migrations add FirstMigration
+
+
+//? apply changes to database :
+dotnet ef database update
+
+
+//? troubleshooting : 
+dotnet ef migrations add FirstMigration -v
+
+
+
+//* ============  7th step =============
+//? adding Mycontext to HomeController.cs
+public class HomeController : Controller
+{    
+    private readonly ILogger<HomeController> _logger;
+    private MyContext _context;         
+    public HomeController(ILogger<HomeController> logger, MyContext context)    
+    {        
+        _logger = logger;
+        _context = context;    
+    }      
+
+
+
