@@ -1,0 +1,24 @@
+﻿@model Dish
+
+<div class="container d-flex flex-column align-items-center gap-5 mt-5">
+    <div class="container ">
+       <table class="table table-striped w-75">
+        <thead class="bg-dark text-light">
+            <tr>
+                <th class="text-center">Name</th>
+                <th class="text-center">Chef</th>
+                <th class="text-center">Tastiness</th>
+                <th class="text-center">Calories</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Dish d in ViewBag.AllDishes)
+            {
+                <tr>
+                    
+                </tr>
+            }
+        </tbody>
+       </table>
+    </div>
+</div>

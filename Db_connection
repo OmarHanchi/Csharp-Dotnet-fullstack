@@ -1,7 +1,7 @@
 //* ============  1st step =============
 //? adding packages 
-// dotnet add package Pomelo.EntityFrameworkCore.MySql --version 6.0.1
-// dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.3
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 6.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.3
 
 
 //* ============  2nd step =============
@@ -22,6 +22,7 @@ public class Monster
                 
 //* ============  3rd step =============
 //? create a Mycontext.cs  &&  "" change the db name ""
+
 #pragma warning disable CS8618
 // We can disable our warnings safely because we know the framework will assign non-null values 
 // when it constructs this class for us.
@@ -86,7 +87,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-
+app.UseSession();
 app.UseAuthorization();
 
 app.MapControllerRoute(
@@ -125,3 +126,431 @@ public class HomeController : Controller
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//* =========== Create ===========
+// Inside HomeController
+[HttpPost("monsters/create")]
+public IActionResult CreateMonster(Monster newMon)
+{    
+    if(ModelState.IsValid)
+    {
+        _context.Add(newMon);    
+        _context.SaveChanges();
+        return RedirectToAction("Index");
+    } 
+    else 
+    {
+        return view ("Index")    
+    }
+}
+
+
+
+//* =========== Read ===========
+[HttpGet("")]    
+public IActionResult Index()    
+{      
+
+    //? we can use viewbag like this : 
+
+    //  Get all Monsters
+    // ViewBag.AllMonsters = _context.Monsters.ToList();             
+    
+    //  Get Monsters with the Name "Mike"
+    // ViewBag.AllMikes = _context.Monsters.Where(n => n.Name == "Mike");     	
+    
+    //  Get the 5 most recently added Monsters        
+    // ViewBag.MostRecent = _context.Monsters.OrderByDescending(u => u.CreatedAt).Take(5).ToList(); 	
+    
+    //  Get one Monster who has a certain description
+    // ViewBag.MatchedDesc = _context.Monsters.FirstOrDefault(u => u.Description == "Super scary");
+    
+    
+    
+    //? or we can simply use viewModel like this : 
+
+    return View();  
+}
+
+//? Reading One Item
+[HttpGet("monsters/{id}")]    
+public IActionResult ShowMonster(int id)    
+{
+    Monster OneMonster = _context.Monsters.FirstOrDefault(a => a.MonsterId == id);            
+    return View(OneMonster);  
+}
+
+
+
+
+
+
+
+
+
+//* =========== Update ===========
+//? first we get the item to update :
+
+[HttpGet("monsters/{MonsterId}/edit")]
+public IActionResult EditMonster(int MonsterId)
+{
+    Monster? MonsterToEdit = _context.Monsters.FirstOrDefault(i => i.MonsterId == MonsterId);
+    // Tip: it would be good to add a check here to ensure what you are grabbing will not return a null item
+    return View(MonsterToEdit);
+}
+ 
+
+
+
+ //? dont forget to change the asp action name : 
+//? Handling a Post Request
+<form asp-action="UpdateMonster" asp-controller="Home" asp-route-MonsterId="@Model.MonsterId" method="post">
+@* the rest of our form *@
+
+
+//? the we make the post action for updating :
+// 1. Trigger a post request that contains the updated instance from our form and the ID of that instance
+[HttpPost("monsters/{MonsterId}/update")]
+public IActionResult UpdateMonster(Monster newMon, int MonsterId)
+{
+    // 2. Find the old version of the instance in your database
+    Monster? OldMonster = _context.Monsters.FirstOrDefault(i => i.MonsterId == MonsterId);
+    // 3. Verify that the new instance passes validations
+    if(ModelState.IsValid)
+    {
+        // 4. Overwrite the old version with the new version
+    	// Yes, this has to be done one attribute at a time
+    	OldMonster.Name = newMon.Name;
+        OldMonster.Height = newMon.Height;
+        OldMonster.Description = newMon.Description;
+    	// You updated it, so update the UpdatedAt field!
+        OldMonster.UpdatedAt = DateTime.Now;
+    	// 5. Save your changes
+        _context.SaveChanges();
+    	// 6. Redirect to an appropriate page
+        return RedirectToAction("Index");
+    } else {
+    	// 3.5. If it does not pass validations, show error messages
+    	// Be sure to pass the form back in so you don't lose your changes
+        // It should be the old version so we can keep the ID
+        return View("EditMonster", OldMonster);
+    }
+}
+
+
+
+
+//* =========== Delete ===========
+//? Below is an example of what your delete button may look like:
+
+<form asp-action="DestroyMonster" asp-controller="Home" asp-route-MonsterId="@Model.MonsterId" method="post">
+    <input type="submit" value="Delete">
+</form>
+
+//? destroy action :
+[HttpPost("monsters/{MonsterId}/destroy")]
+public IActionResult DestroyMonster(int MonsterId)
+{
+    Monster? MonToDelete = _context.Monsters.SingleOrDefault(i => i.MonsterId == MonsterId);
+    // Once again, it could be a good idea to verify the monster exists before deleting
+    _context.Monsters.Remove(MonToDelete);
+    _context.SaveChanges();
+    return RedirectToAction("Index");
+}
+
+
+
+
+
+
+
+//*=================Partials======================
+//?   check if this line is there in _ViewImports.cshtml
+// other imports
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+
+//? then    
+@await Html.PartialAsync("_Navbar")
+<h1>Welcome to this site!</h1>
+<p>The rest of your View content here...</p>
+
+
+
+
+
+//*=================Multiple viewmodel ======================
+
+//?_ProductForm.cshtml
+@model Product
+<form asp-action="CreateProduct" asp-controller="Home" method="post">    
+    <div class="mb-3">        
+        <label asp-for="ProductName"></label>        
+        <input asp-for="ProductName" class="form-control">        
+        <span asp-validation-for="ProductName" class="text-danger"></span>    
+    </div>    
+    <div class="mb-3">        
+        <label asp-for="Price"></label>        
+        <input asp-for="Price" class="form-control">        
+        <span asp-validation-for="Price" class="text-danger"></span>    
+    </div>    
+    <input type="submit" value="Add Product">
+</form>
+
+//?_UserForm.cshtml
+@model User
+<form asp-action="CreateUser" asp-controller="Home" method="post">    
+    <div class="mb-3">        
+        <label asp-for="Username"></label>        
+        <input asp-for="Username" class="form-control">        
+        <span asp-validation-for="Username" class="text-danger"></span>    
+    </div>    
+    <div class="mb-3">        
+        <label asp-for="Age"></label>        
+        <input asp-for="Age" class="form-control">        
+        <span asp-validation-for="Age" class="text-danger"></span>    
+    </div>    
+    <input type="submit" value="Add User">
+</form>
+
+
+
+//?Index.cshtml
+<h1>Add a Product</h1>
+@await Html.PartialAsync("_ProductForm")
+<h1>Add a User</h1>
+@await Html.PartialAsync("_UserForm")
+
+
+
+
+
+
+//*================= Registration Model ====================
+#pragma warning disable CS8618
+using System.ComponentModel.DataAnnotations;
+// Add this using statement to access NotMapped
+using System.ComponentModel.DataAnnotations.Schema;
+namespace YourProjectName.models;
+public class User
+{        
+    [Key]        
+    public int UserId { get; set; }
+    
+    [Required]        
+    public string FirstName { get; set; }
+    
+    [Required]        
+    public string LastName { get; set; }         
+    
+    [Required]
+    [EmailAddress]
+    [UniqueEmail]
+    public string Email { get; set; }      
+    
+    [Required]
+    [DataType(DataType.Password)]
+    [MinLength(8, ErrorMessage = "Password must be at least 8 characters")]
+    public string Password { get; set; }          
+    
+    public DateTime CreatedAt {get;set;} = DateTime.Now;        
+    public DateTime UpdatedAt {get;set;} = DateTime.Now;
+    
+    [NotMapped]
+    [Compare("Password")]
+    public string PasswordConfirm { get; set; }
+}
+
+
+
+
+
+//? ======= Unique email validation ============
+public class UniqueEmailAttribute : ValidationAttribute
+{
+    protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
+    {
+    	// Though we have Required as a validation, sometimes we make it here anyways
+    	// In which case we must first verify the value is not null before we proceed
+        if(value == null)
+        {
+    	    // If it was, return the required error
+            return new ValidationResult("Email is required!");
+        }
+    
+    	// This will connect us to our database since we are not in our Controller
+        MyContext _context = (MyContext)validationContext.GetService(typeof(MyContext));
+        // Check to see if there are any records of this email in our database
+    	if(_context.Users.Any(e => e.Email == value.ToString()))
+        {
+    	    // If yes, throw an error
+            return new ValidationResult("Email must be unique!");
+        } else {
+    	    // If no, proceed
+            return ValidationResult.Success;
+        }
+    }
+}
+
+
+
+
+
+
+
+//*=============Password hasher ===================
+//? Add this using statement to be able to use PasswordHasher
+using Microsoft.AspNetCore.Identity;
+
+//?  password hashing action :
+    [HttpPost("users/create")]   
+    public IActionResult Method(User newUser)    
+    {        
+        if(ModelState.IsValid)        
+        {
+            // Initializing a PasswordHasher object, providing our User class as its type            
+            PasswordHasher<User> Hasher = new PasswordHasher<User>();   
+            // Updating our newUser's password to a hashed version         
+            newUser.Password = Hasher.HashPassword(newUser, newUser.Password);            
+            //Save your user object to the database 
+            _context.Add(newUser);
+            _context.SaveChanges();  
+            return RedirectToAction("Success");
+                        
+        } else {
+            return view ("Index");     
+        }   
+    }
+
+
+    public IActionResult Success()
+    {
+        return View("Success"); 
+    }
+
+
+
+
+
+
+
+//*============== Login MOdel Form ============
+#pragma warning disable CS8618
+using System.ComponentModel.DataAnnotations;
+// Add this using statement to access NotMapped
+using System.ComponentModel.DataAnnotations.Schema;
+namespace YourProjectName.Models;public class LoginUser
+{
+    // No other fields!
+    [Required]    
+    public string Email { get; set; }    
+    [Required]    
+    public string Password { get; set; } 
+}
+
+
+
+
+
+
+//* ============== Login Validation ================
+public IActionResult Login(LoginUser userSubmission)
+{
+  if (ModelState.IsValid)
+  {
+    // If initial ModelState is valid, query for a user with the provided email
+    User? userInDb = _context.Users.FirstOrDefault(u => u.Email == userSubmission.Email);
+
+    // If no user exists with the provided email
+    if (userInDb == null)
+    {
+      // Add an error to ModelState and return to View!
+      ModelState.AddModelError("Email", "Invalid Email/Password");
+      return View("Index");
+    }
+
+    // Otherwise, we have a user, now we need to check their password
+    // Initialize hasher object
+    PasswordHasher<LoginUser> hasher = new PasswordHasher<LoginUser>();
+
+    // Verify provided password against hash stored in db
+    var result = hasher.VerifyHashedPassword(userSubmission, userInDb.Password, userSubmission.Password);
+
+    // Result can be compared to 0 for failure
+    if (result == 0)
+    {
+      // Handle failure (this should be similar to how "existing email" is handled)
+      ModelState.AddModelError("Password", "Invalid Email/Password"); // Add specific error for password
+      return View("Index"); // Return to the login view with errors
+    }
+
+    // Handle success (this should route to an internal page)
+    //  Here you would typically redirect to a success page 
+    return RedirectToAction("Success"); // Example redirect to a Success action
+  }
+  else
+  {
+    // Handle else (ModelState is not valid)
+    //  Here you would typically return the view with the validation errors
+    return View("Login");
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+//*==================Session  security ===============
+//? add this in the top of HomeController.cs
+
+using Microsoft.AspNetCore.Mvc.Filters;
+
+
+
+
+//? add this to the bottom of homecontroller : 
+// Name this anything you want with the word "Attribute" at the end
+public class SessionCheckAttribute : ActionFilterAttribute
+{
+    public override void OnActionExecuting(ActionExecutingContext context)
+    {
+        // Find the session, but remember it may be null so we need int?
+        int? userId = context.HttpContext.Session.GetInt32("UserId");
+        // Check to see if we got back null
+        if(userId == null)
+        {
+            // Redirect to the Index page if there was nothing in session
+            // "Home" here is referring to "HomeController", you can use any controller that is appropriate here
+            context.Result = new RedirectToActionResult("Index", "Home", null);
+        }
+    }
+}
+
+
+
+//? don't forget to add this attribute before the routes/actions like this  : 
+// The name we gave our class minus "Attribute"
+[SessionCheck]
+[HttpGet("someRoute")]
+// The rest of the code
