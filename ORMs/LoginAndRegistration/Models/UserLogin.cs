@@ -4,9 +4,17 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace LoginAndRegistration.Models;public class LoginUser
 {
-    // No other fields!
+
+
+    //* ===========  Email validation ===============
     [Required]    
-    public string Email { get; set; }    
-    [Required]    
-    public string Password { get; set; } 
+    public string LoginEmail { get; set; }  
+
+
+    //* ======= Login Pssword validation ============
+    [Required]
+    [DataType(DataType.Password)]
+    public string LoginPassword { get; set; } 
 }
+
+

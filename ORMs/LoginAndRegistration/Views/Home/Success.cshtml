@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Success";
+}
+
+<div class="container mt-5">
+    <h1>Success!</h1>
+    <p>You have successfully logged in or registered.</p>
+    <p>This is the protected Success page.</p>
+    <p>Only authenticated users can access this page.</p>
+    <form asp-action="Logout" asp-controller="Home" method="post">
+        <button type="submit" class="btn btn-primary">Logout</button>
+    </form>
+</div>

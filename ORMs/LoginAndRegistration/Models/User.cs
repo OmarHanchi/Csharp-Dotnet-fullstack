@@ -1,36 +1,47 @@
 #pragma warning disable CS8618
 using System.ComponentModel.DataAnnotations;
-// Add this using statement to access NotMapped
 using System.ComponentModel.DataAnnotations.Schema;
 namespace LoginAndRegistration.Models;
 public class User
-{        
+{   
+
     [Key]        
     public int UserId { get; set; }
     
+    //* ======= First Name validation ============
     [Required]   
     [MinLength(2,ErrorMessage ="First name must be at least 2 characters")]     
     public string FirstName { get; set; }
     
+
+    //* ======= Last Name validation ============
     [Required] 
-    [MinLength(2,ErrorMessage ="Last name must be at least 2 characters")]     
-       
+    [MinLength(2,ErrorMessage ="Last name must be at least 2 characters")]      
     public string LastName { get; set; }         
     
+
+    //* ======= Email validation ============
     [Required]
     [EmailAddress]
     [UniqueEmail]
     public string Email { get; set; }      
     
+
+    //* ======= Password validation ============
     [Required]
     [DataType(DataType.Password)]
     [MinLength(8, ErrorMessage = "Password must be at least 8 characters")]
     public string Password { get; set; }          
     
+
+    //* ======= Created & Updated validation ============
     public DateTime CreatedAt {get;set;} = DateTime.Now;        
     public DateTime UpdatedAt {get;set;} = DateTime.Now;
-    
+
+
+    //* ============= Password validation ==============
     [NotMapped]
+    [DataType(DataType.Password)]
     [Compare("Password")]
     public string PasswordConfirm { get; set; }
 }
@@ -39,7 +50,7 @@ public class User
 
 
 
-//? ======= Unique email validation ============
+//! ======= Unique email validation ============
 public class UniqueEmailAttribute : ValidationAttribute
 {
     protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
