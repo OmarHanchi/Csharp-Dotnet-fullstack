@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace ChefsDishes.Models;
-public class User
+public class Chef
 {   
 
     [Key]        
@@ -42,6 +42,7 @@ public class User
     public DateTime DateOfBirth {get;set;}
     
 
+    public List<Dish> CreatedDishes {get;set;} = new List<Dish>();
 
 
 

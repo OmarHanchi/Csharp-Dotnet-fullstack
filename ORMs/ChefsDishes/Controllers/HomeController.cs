@@ -5,18 +5,41 @@ using ChefsDishes.Models;
 namespace ChefsDishes.Controllers;
 
 public class HomeController : Controller
-{
+{    
     private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
-    {
+    private MyContext _context;         
+    public HomeController(ILogger<HomeController> logger, MyContext context)    
+    {        
         _logger = logger;
-    }
+        _context = context;    
+    }      
 
-    public IActionResult Index()
+
+    public IActionResult Chefs()
     {
         return View();
     }
+
+
+    [HttpPost("Chefs/create")]
+    public IActionResult CreateChef (Chef newChef)
+    {    
+        if(ModelState.IsValid)
+        {
+            _context.Add(newChef);    
+            _context.SaveChanges();
+            return RedirectToAction("Chefs");
+        } 
+        else 
+        {
+            return View ("ChefForm");    
+        }
+    }
+
+
+
+    
+
 
     public IActionResult Privacy()
     {

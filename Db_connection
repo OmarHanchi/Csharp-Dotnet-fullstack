@@ -143,20 +143,20 @@ public class HomeController : Controller
 
 //* =========== Create ===========
 // Inside HomeController
-[HttpPost("monsters/create")]
-public IActionResult CreateMonster(Monster newMon)
-{    
-    if(ModelState.IsValid)
-    {
-        _context.Add(newMon);    
-        _context.SaveChanges();
-        return RedirectToAction("Index");
-    } 
-    else 
-    {
-        return view ("Index")    
+[HttpPost("Chefs/create")]
+    public IActionResult CreateChef (Chef newChef)
+    {    
+        if(ModelState.IsValid)
+        {
+            _context.Add(newChef);    
+            _context.SaveChanges();
+            return RedirectToAction("Chefs");
+        } 
+        else 
+        {
+            return View ("ChefForm");    
+        }
     }
-}
 
 
 
