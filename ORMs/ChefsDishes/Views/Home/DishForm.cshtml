@@ -1,0 +1,60 @@
+@{
+    ViewData["Title"] = "Add Dish";
+}
+
+@model Dish
+
+<div class="container d-flex flex-column gap-3 mt-4">
+    <h1 class="text-center">Add a Dish</h1>
+    <form asp-action="CreateDish" asp-controller="Home">
+     <div class="row">
+            <div class="col">
+                <div class="d-flex flex-column form-group gap-2">
+                    <label asp-for="Name">Name of Dish</label>
+                    <input class="form-control" asp-for="Name">
+                </div>
+                <span class="text-danger" asp-validation-for="Name"></span>
+            </div>
+            <div class="col">
+                <div class="d-flex flex-column form-group gap-2">
+                    <label asp-for="ChefId">Chef's Name</label>
+                    <select asp-for="ChefId" class="form-select">
+                        <option value="">Select Chef</option>
+                        @foreach (var c in ViewBag.AllChefs)
+                        {
+                            <option value="@c.UserId">@c.FirstName @c.LastName</option>
+                        }
+                    </select>
+
+                </div>
+                <span class="text-danger" asp-validation-for="ChefId"></span>
+            </div>
+            <div class="col">
+                <div class="d-flex flex-column form-group gap-2">
+                    <label asp-for="Tastiness">Tastiness</label>
+                    <select class="form-select" asp-for="Tastiness">
+                        <option value="null" selected>--- Select ---</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <span class="text-danger" asp-validation-for="Tastiness"></span>
+            </div>
+            <div class="row d-flex justify-content-between mt-5">
+                <div class="col-4 d-flex flex-column form-group gap-2">
+                    <label asp-for="Calories"># of Calories</label>
+                    <div>
+                        <input class="form-control" asp-for="Calories">
+                        <span class="text-danger" asp-validation-for="Calories"></span>
+                    </div>
+
+                </div>
+                <div class="col-4 d-flex flex-column align-items-end justify-content-end">
+                    <button class="btn btn-primary">Add Dish</button>
+                </div>
+            </div>
+    </form>
+</div>

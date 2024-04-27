@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ChefsDishes.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ChefsDishes.Controllers;
 
@@ -15,13 +16,29 @@ public class HomeController : Controller
     }      
 
 
-    public IActionResult Chefs()
+    //*============All routes related to chef ================
+  public IActionResult Chefs()
+{
+        ViewBag.AllChefs = _context.Chefs.Include(c => c.CreatedDishes).ToList(); ;
+  
+  return View();
+}
+
+
+
+
+    
+
+    [HttpGet("chefs/new")]
+    public IActionResult ChefForm()
     {
+
         return View();
     }
 
 
-    [HttpPost("Chefs/create")]
+
+    [HttpPost("chefs/new/process")]
     public IActionResult CreateChef (Chef newChef)
     {    
         if(ModelState.IsValid)
@@ -38,8 +55,37 @@ public class HomeController : Controller
 
 
 
-    
 
+
+    //*============All routes related to chef ================
+    [HttpGet("dishes")]
+    public IActionResult Dishes()
+    {
+        ViewBag.AllDishes = _context.Dishes.Include(d => d.Chef).ToList();
+        return View();
+    }
+
+     [HttpPost("dishes/new/process")]
+    public IActionResult CreateDish (Dish newDish)
+    {    
+        if(ModelState.IsValid)
+        {
+            _context.Add(newDish);    
+            _context.SaveChanges();
+            return RedirectToAction("Dishes");
+        } 
+        else 
+        {
+            return View ("DishForm");    
+        }
+    }    
+
+   [HttpGet("dishes/new")]
+    public IActionResult DishForm()
+    {
+        ViewBag.AllChefs = _context.Chefs.ToList();
+        return View();
+    }
 
     public IActionResult Privacy()
     {

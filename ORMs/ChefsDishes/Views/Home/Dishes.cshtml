@@ -1,6 +1,24 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
-}
-<h1>@ViewData["Title"]</h1>
+﻿@model Dish
 
-<p>Use this page to detail your site's privacy policy.</p>
+<h1>Our Delicious Dishes</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Chef</th>
+            <th>Tastiness</th>
+            <th>Calories</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dish in ViewBag.AllDishes )  // Cast to Dish type
+        {
+            <tr>
+                <td>@dish.Name</td>
+                <td>@dish.Chef?.FirstName @dish.Chef?.LastName</td>  
+                <td>@dish.Tastiness</td>
+                <td>@dish.Calories</td>
+            </tr>
+        }
+    </tbody>
+</table>

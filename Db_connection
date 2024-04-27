@@ -68,6 +68,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpContextAccessor();  
+builder.Services.AddSession();  
 
 // Create a variable to hold your connection string
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -143,7 +145,7 @@ public class HomeController : Controller
 
 //* =========== Create ===========
 // Inside HomeController
-[HttpPost("Chefs/create")]
+[HttpPost("Chefs/new")]
     public IActionResult CreateChef (Chef newChef)
     {    
         if(ModelState.IsValid)

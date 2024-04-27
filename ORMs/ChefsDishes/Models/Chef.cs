@@ -49,7 +49,6 @@ public class Chef
     //* ======= Created & Updated validation ============
     public DateTime CreatedAt {get;set;} = DateTime.Now;        
     public DateTime UpdatedAt {get;set;} = DateTime.Now;
-
 }
 
 

@@ -5,7 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddHttpContextAccessor();  
+builder.Services.AddSession(); 
 // Create a variable to hold your connection string
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
@@ -29,7 +30,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Chefs}/{id?}");
 
 app.Run();
 

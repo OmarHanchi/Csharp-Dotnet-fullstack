@@ -1,8 +1,37 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+@model Chef
+<h1>All Chefs</h1>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th># of</th>
+
+            
+        </tr>
+    </thead>
+    <tbody>
+        @{
+                if (ViewBag.AllChefs.Count == 0)
+                {
+                    <td class="px-3">No Records Found.</td>
+                    <td></td>
+                    <td></td>
+                }
+                else
+                {
+                    foreach (Chef c in ViewBag.AllChefs)
+                    {
+                        int Age = DateTime.Now.Year - c.DateOfBirth.Year;
+                        <tr>
+                            <td class="text-center">@c.FirstName @c.LastName</td>
+                            <td class="text-center">@Age</td>
+                            <td class="text-center">@c.CreatedDishes.Count</td>
+                        </tr>
+                    }
+                }
+            }
+    </tbody>
+</table>
